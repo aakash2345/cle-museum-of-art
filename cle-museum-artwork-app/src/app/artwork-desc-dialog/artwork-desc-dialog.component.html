@@ -1,0 +1,36 @@
+<mat-card class="dialog-card">
+  <mat-card-header>
+    <div mat-card-avatar class="dialog-header-image">
+      <img
+        [src]="
+          'assets/artwork-images/' + data.accession_number + '_reduced.jpg'
+        "
+      />
+    </div>
+    <mat-card-title>{{ data.name }}</mat-card-title>
+    <mat-card-subtitle>{{ data.title }}</mat-card-subtitle>
+  </mat-card-header>
+  <div class="img-container">
+    <img
+      class="artwork-img"
+      [src]="'assets/artwork-images/' + data.accession_number + '_reduced.jpg'"
+    />
+  </div>
+  <mat-card-content>
+    <div>
+      <label class="form-label">role</label>
+    </div>
+    <p class="form-description text-uppercase">
+      {{ data.role }}
+    </p>
+    <div>
+      <label class="form-label">description</label>
+    </div>
+    <p class="form-description">
+      <span class="text-uppercase">{{ data.role }}</span> - {{ data.tombstone }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-button mat-dialog-close (click)="onClose()">Close</button>
+  </mat-card-actions>
+</mat-card>
