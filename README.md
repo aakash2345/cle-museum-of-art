@@ -24,7 +24,7 @@
 
 <ul>
 	<li>
-		Prompt message: Please give path as cle-museum-artwork-app/src/assets/artwork-json-data to store the output JSON file
+		Prompt message: Please give path as cle-museum-artwork-app/src/assets/artwork-json-data/ to store the output JSON file
 	</li>
 </ul>
 
